@@ -225,3 +225,217 @@ main section.new-tovar a{
     justify-self: center;
 
 }
+
+
+
+main section.idea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 36vw;
+    column-gap: 16px;
+    padding: 60px 6vw;
+}
+
+main section.idea img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main section.idea div{
+    display: grid;
+    padding: 5vw;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    grid-template-rows: max-content;
+    row-gap: 14px;
+
+}
+
+main section.idea div a {
+    align-self: end;
+    justify-self: start;
+    background-color: var(--color-nav-links);
+
+}
+
+main section.idea div h2 {
+    font-family: "Clah Display";
+    font-size: 24px;
+    font-weight: normal;
+
+}
+
+main section.idea div span {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+main section.join {
+    display: grid;
+    justify-items: center;
+    row-gap: 30px;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    padding: 80px 0;
+    background-image: url(../images/Okno.png);
+    background-size: cover;
+    background-position: 0% 40%;
+    padding: 80px 0;
+
+}
+main section.join h2{
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 24px;
+}
+main section.join p {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+    width: 40vw;
+    text-align: center;
+
+}
+
+
+main section.join ul {
+    display: flex;
+    column-gap: 36px;
+}
+
+main section.join ul li {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    align-items: center;
+    column-gap: 4px;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+main section.join form {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+}
+
+main section.join form input {
+    border: none;
+    border-radius: 0;
+    padding-left: 3vw;
+}
+
+main section.join form input[type=submit] {
+    color:var(--color-dark-primary) ;
+    background-color: var(--color-ligth-gray);
+    padding: 0 32px;
+}
+
+main section.join form input[type=submit]:hover{
+    transition: all 0.8s;
+    color:var(--color-ligth-gray);
+    background-color: var(--color-dark-primary);
+}
+
+body>footer {
+    display: grid;
+    row-gap: 24px;
+    padding: 60px 6vw 24px 6vw ;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+}
+
+body>footer ul {
+    list-style-type: none;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header ul li.spisock {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+
+footer header ul   {
+    display: grid;
+    row-gap: 12px;
+}
+
+footer footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+}
+
+footer footer span {
+    justify-self: start;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer footer ul {
+    display: grid;grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 24px;
+    justify-items: end;
+    justify-self: end;
+    column-gap: 24px;
+}
+
+footer footer ul svg {
+    height: 100%;
+    color: var(--color-white);
+}
+
+footer header form  input:nth-child(1) {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+    background-color: var(--color-nav-links);
+}
+
+footer header form  input {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header form  input::placeholder {
+    color: var(--color-white);
+}
+
+footer header form[type="submit"] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+footer header form div {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+}
+
+footer form h4 {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+footer hr {
+    color: var(--color-nav-links);
+}
+
