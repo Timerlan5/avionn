@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a2548;
+    --color-nav-links: #726e8d;
+    --font-Clah-Display:"Clah Display"
+}
+
+
+.button {
+    text-decoration: none;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+.button:hover {
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+.ggbutton{
+    text-decoration: none;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+.ggbutton:hover{
+    transition: all 0.8s;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+}
+
+.jopa {
+    text-decoration: none;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+.jopa:hover {
+    transition: all 0.8s;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+}
+
+
+header div.styl {
+    font-family: Satoshi;
+    font-size: 14px;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    padding: 11px 9px;
+    justify-self: center;
+}
+
+header div.styl p {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    column-gap: 8px;
+    justify-self: center;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 30px 80px;
+}
+
+header section a{
+    font-family: "Clah Display";
+    justify-self: center;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+header section>a {
+    font-family: "Clah Display";
+    font-size: 24px;
+    text-decoration: none;
+    color: #22202e;
+}
+
+header section ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 4vw;
+}
+
+header section ul a {
+    text-decoration: none;
+    color: var(--color-nav-links);
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+header section div.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 16px);
+    justify-content: end;
+    column-gap: 15px;
+}
+
+main section.fhoto {
+    padding-top: 50px;
+    padding-left: 8vw;
+    padding-bottom: 50px;
+    column-gap: 6vw;
+    display: grid;
+    grid-template-rows: 48vw;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-lite-gray);
+}
+
+main section.Dandy {
+    padding-top: 50px;
+    padding-left: 8vw;
+    padding-bottom: 50px;
+    column-gap: 6vw;
+    display: grid;
+    grid-template-rows: 48vw;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-lite-gray);
+    color: var(--color-dark-primary);
+}
+
+main section.Dandy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main section.Dandy div h1 {
+    font-family: "Clash Display";
+    font-size: 36px;
+    font-weight: 400;
+    display: grid;
+    padding-bottom: 16px;
+}
+
+main section.Dandy h2 {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+
+main section.Dandy hr {
+    width: 80%;
+    border: 1px solid #EBE8F4;
+
+}
+
+main section.Dandy h3 {
+    font-family: var(--font-Clah-Display);
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 14px;
+}
+
+main section.Dandy p.tru {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 36px;
+}
+
+main section.Dandy div.Dimensions {
+    display: grid;
+    grid-template-columns: max-content 1px max-content 1px max-content;
+    align-items: center;
+    column-gap: 50px;
+    padding-bottom: 40px;
+}
+
+main section.Dandy div.Dimensions div {
+    height: 80%;
+    background-color: #EBE8F4;
+}
+
+main section.Dandy div.Dimensions p {
+    display: grid;
+    row-gap: 15px;
+    font-family: var(--font-Clah-Display);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main section.Dandy div.Quantitity {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 122px;
+    height: 50px;
+    grid-template-rows: 36px;
+    background-color: var(--color-white);
+    justify-items: center;
+    align-items: center;
+}
+
+main section.Dandy div.Quantitity span {
+    font-family: Satosahi;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main section.Dandy div.Quantitity span:nth-child(1) {
+    color: #EBE8F4;
+}
+
+main section.Dandy div.Quantitity span:nth-child(3) {
+    color: #EBE8F4;
+}
+
+main section.Dandy div.btn  {
+    padding-top: 48px;
+}
+
+main section.divan h1 {
+    font-family: "Clah Display";
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+main section.divan header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 500px;
+    column-gap: 20px;
+    color: var(--color-dark-primary)
+}
+
+main section.divan {
+    padding: 50px 8vw;
+}
+
+main section.divan header div {
+    padding-bottom: 100px;
+}
+
+main section.divan header div div.dead p {
+    font-size: 20px;
+    font-family: "Clah Display";
+    font-weight: 400;
+    padding-bottom: 10px;
+
+}
+
+main section.divan header div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 24px;
+}
+
+main section.divan header div img:hover {
+    transition: all 0.8s;
+    transform: scale(1.05);
+}
+
+main section.divan a {
+    display: grid;
+    justify-content: center;
+    margin: 0px 35vw;
+}
+
+main section.our-Brand {
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+    color: var(--color-dark-primary)
+}
+
+main section.our-Brand h2 {
+    font-family: "Clah Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section.our-Brand div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+}
+
+main section.our-Brand div article {
+    display: grid;
+    grid-template-rows: 24px repeat(2, 1fr);
+    row-gap: 12px;
+    padding: 48px;
+    background-color: var(--color-lite-gray);
+}
+
+main section.our-Brand div article svg {
+    height: 100%;
+}
+
+main section.our-Brand div article h3 {
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.our-Brand div article p {
+    font-family: Satoshi;
+}
+
+
+
+main section.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 36vw;
+    column-gap: 16px;
+    /* padding: 60px 6vw; */
+}
+main section.benefits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main section.benefits div {
+    display: grid;
+    background-color: var(--color-lite-gray);
+    padding: 5vw;
+    color: var(--color-black);
+    grid-template-rows: max-content;
+    row-gap: 12px;
+}
+main section.benefits div form {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 216px;
+}
+main section.benefits div form input {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+}
+main section.benefits div form input[type=submit] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+main section.benefits div h2 {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 30px;
+}
+main section.benefits div span {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+
+
+body>footer {
+    display: grid;
+    row-gap: 24px;
+    padding: 60px 6vw 24px 6vw ;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+}
+
+body>footer ul {
+    list-style-type: none;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+body>footer a {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+footer header ul li.zxc {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+footer header ul a.rtp{
+    font-family: "Clah Display";
+    font-size: 36px;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+footer header ul li:nth-child(2) {
+display: flex;
+gap: 24px;
+}
+footer header {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr 1fr 1fr ;
+    border-bottom: 1px solid var(--color-nav-links);
+    padding-bottom: 48px;
+    align-items: start;
+}
+
+footer header ul   {
+    display: grid;
+    row-gap: 12px;
+}
+
+footer footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+footer footer span {
+    justify-self: start;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+footer footer ul {
+    display: grid;grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 24px;
+    justify-items:end;
+    justify-self: start;
+    column-gap: 24px;
+}
+
+footer footer ul svg {
+    height: 100%;
+    color: var(--color-white);
+}
+
+
+

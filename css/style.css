@@ -1,0 +1,675 @@
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a2548;
+    --color-nav-links: #726e8d;
+    --font-Clah-Display:"Clah Display"
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+
+h2 { 
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 30px;
+}
+    
+.header {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(15, 14, 14);
+    z-index: 1000;
+}
+
+.header nav ul {
+    padding-top: 60px;
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 20px;
+}
+
+.header nav ul a {
+    font-family: var(--font-Clah-Display);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+body>header  {
+    display: grid;
+    row-gap: 20px;
+    padding: 0 2vw;
+    padding: 20px 2vw;
+}
+header hr {
+    border-color: var(--color-lite-gray);
+}
+
+.header ul a:hover {
+    color: var(--color-dark-primary);
+}
+
+.header nav {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding: 20px;
+}
+
+.header nav svg {
+    color: var(--color-white);
+    height: 100%;
+    justify-self: end;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+body>header{
+    display: grid;
+    row-gap: 20px;
+    padding: 20px 2vw;
+    padding-top: 20px;
+    }
+    
+    body>footer a {
+    text-decoration: none;
+    color: var(--color-white);
+    }
+    
+    header>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    }
+
+    header>div div.burger svg#burg {
+        display: none;
+    }
+    
+    header>div span {
+    justify-self: center;
+    font-size: 24px;
+    font-family: 'Clah Display';
+    }
+    
+    header>div div.icons {
+    justify-self: end;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    header>div svg {
+    height: 16px;
+    color: var(--color-dark-primary);
+    }
+    
+    header nav {
+    display: grid;
+    justify-items: center;
+    }
+    
+    header nav ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 4vw;
+    }
+    
+    header nav ul a {
+    text-decoration: none;
+    color: var(--color-nav-linke);
+    font-family: 'Satoshi';
+    font-size: 16px;
+    }
+    
+    header nav ul a:hover {
+    color: var(--color-black);
+    transition: all 0.7s;
+    }
+
+main section.lux{
+    position: relative;
+    display: grid;
+    grid-template-rows: 44vw;
+}
+
+main section.lux img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.lux div {
+    position: absolute;
+    right: 8vw;
+    top: 6vw;
+    grid-template-columns: 30vw;
+    bottom: 8vw;
+    display: grid;
+    row-gap: 20px;
+    background-color: var(--color-white);
+    grid-template-rows: max-content;
+    padding: 5vw;
+    
+}
+
+main section.lux h1 {
+    font-family: Satoshi;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main section.lux div span {
+    font-family: Satoshi;
+    font-size: 18px;
+}
+
+main section.lux div a {
+    align-self: end;
+    justify-self: start;
+}
+
+main section.our-Brand {
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.our-Brand h2 {
+    font-family: "Clah Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section.our-Brand div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+}
+
+main section.our-Brand div article {
+    display: grid;
+    grid-template-rows: 24px repeat(2, 1fr);
+    row-gap: 12px;
+    padding: 48px;
+    background-color: var(--color-lite-gray);
+}
+
+main section.our-Brand div article svg {
+    height: 100%;
+}
+
+main section.our-Brand div article h3 {
+    font-family: "Clah Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.our-Brand div article p {
+    font-family: Satoshi;
+}
+
+main section.new-tovar {
+    display: grid;padding: 80px;
+    display: grid;
+    row-gap: 36px;
+
+}
+
+main section.new-tovar div {
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main section.new-tovar div article {
+    display: grid;
+    row-gap: 24px;
+    grid-template-rows: 305px 1fr;
+}
+
+main section.new-tovar div article:hover {
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+main section.new-tovar div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.new-tovar div p {
+    font-family: "Clah Display";
+    font-size: 20px;
+    font-weight: 400;
+    display: grid;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+
+main section.new-tovar div p span {
+    font-family: Satoshi;
+}
+
+main section.new-tovar a {
+    justify-self: center;
+}
+
+main section.idea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 36vw;
+    column-gap: 16px;
+    padding: 60px 6vw;
+}
+
+main section.idea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.idea div{
+    display: grid;
+    background-color: var(--color-dark-primary);
+    padding: 5vw;
+    color: var(--color-white);
+    grid-template-rows: max-content;
+    row-gap: 12px;
+}
+
+main section.idea div a {
+    align-self: end;
+    justify-self: start;
+    background-color: var(--color-nav-links);
+}
+
+main section.idea div h2 {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 30px;
+}
+
+main section.idea div span {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+main section.join {
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    padding: 80px 0;
+    background-image: url(../images/Okno.png);
+    background-size: cover;
+    background-position: 0% 50%;
+    color: var(--color-white);
+    padding: 80px 0;
+
+}
+
+main section.join p {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 18px;
+    width: 40vw;
+    text-align: center;
+
+}
+
+main section.join ul {
+    display: flex;
+    column-gap: 36px;
+}
+
+main section.join ul li {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    align-items: center;
+    column-gap: 4px;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+main section.join form {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+}
+
+main section.join form input {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+}
+
+main section.join form input[type=submit] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+main section.join form input[type=submit]:hover{
+    transition: all 0.8s;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+}
+
+body>footer {
+    display: grid;
+    row-gap: 24px;
+    padding: 60px 6vw 24px 6vw ;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+}
+
+body>footer ul {
+    list-style-type: none;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+body>footer a {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+footer header ul li.zxc {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+footer header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    border-bottom: 1px solid var(--color-nav-links);
+    padding-bottom: 48px;
+    align-items: start;
+}
+
+footer header ul   {
+    display: grid;
+    row-gap: 12px;
+}
+
+footer footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+footer footer span {
+    justify-self: start;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+footer footer ul {
+    display: grid;grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 24px;
+    justify-items: end;
+    justify-self: end;
+    column-gap: 24px;
+}
+
+footer footer ul svg {
+    height: 100%;
+    color: var(--color-white);
+}
+
+footer header form  input:nth-child(1) {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+    background-color: var(--color-nav-links);
+}
+
+footer header form  input {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header form  input::placeholder {
+    color: var(--color-white);
+}
+
+footer header form[type="submit"] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+footer header form div {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+footer form h4 {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header form div {
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 390px) {
+    header>div {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    header hr, header nav, header div.icons svg {
+        display: none;
+    }
+
+    header>div span {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: start;
+    }
+
+    header>div svg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
+    }
+
+    header>div div.burger svg#burg {
+        display: block;
+    }
+
+    header>div div.burger {
+        display: flex;
+        justify-self: end;
+        column-gap: 20px;
+        
+    }
+
+    main section.lux div {
+        position: static;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        grid-template-columns: 1fr;
+        grid-row: 1/2;
+    }
+
+    main section.lux img {
+        grid-row: 2/3;
+    }
+
+    main section.lux {
+        grid-template-rows: max-content;
+    }
+
+    main section.lux div h1 {
+        font-size: 24px;
+    }
+
+    main section.lux div span {
+        font-size: 16px;
+    }
+
+    main section.div a {
+        justify-self: center;
+        width: 100%;
+    }
+
+    main section.our-Brand h2 {
+        font-size: 20px;
+        text-align-last: left;
+    }
+
+    main section.our-Brand div {
+        grid-template-columns: 1fr;
+        row-gap: 26px;
+    }
+
+    main section.new-tovar div {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    main section.new-tovar div article {
+        grid-template-rows: 163px 1fr;
+    }
+
+    main section.new-tovar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main section.idea {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        row-gap: 24px;
+    }
+
+    main section.idea h2 {
+        font-size: 20px;
+    }
+
+    main section.idea div {
+        row-gap: 30px;
+    }
+
+    main section.idea div span {
+        font-size: 14px;
+    }
+
+    main section.idea div a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main section.join {
+        padding: 20px;
+        justify-items: flex-start;
+    }
+
+    main section.join h2 {
+        font-size: 24px;
+    }
+
+    main section.join p {
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+    }
+
+    main section.join ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    footer header {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 12px;
+    }
+
+    footer header  form {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    footer footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer footer ul {
+        display: none;
+    }
+
+    footer footer span {
+        justify-self: center;
+    }
+}
+
+ 
